@@ -2,7 +2,9 @@
 
 #include <map>
 
+#if defined(MPIX_CUDA_AWARE_SUPPORT)
 #include <mpi-ext.h> // Needed for CUDA-aware check
+#endif // MPIX_CUDA_AWARE_SUPPORT
 
 namespace c10d {
 
